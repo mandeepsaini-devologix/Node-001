@@ -18,8 +18,4 @@ server.listen(3000, () => {
 });
 
 
-export function funcName()
-{
-
-}
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="">Student Name : <%= data.name %> </div>
+    <div class="">Student Age :  <%= data.age %></div>
+    
+    <% if (data.grade == 'A') { %>
+    <div class="" style=" color:green;">
+        Student Grade : <%= data.grade %> 
+    </div>
+    <%  }  else if(data.grade == 'B') { %>
+    <div class="" style=" color:blue;">
+        Student Grade : <%= data.grade %> 
+    </div>
+     <%  }  else { %>
+    <div class="" style=" color:red;">
+        Student Grade : <%= data.grade %> 
+    </div>
+    <%  }  %>
+
+    --<%= data.temp %>--
+    --<%- data.temp %>--
+    --<% data.temp %>--
+    
+</body>
+</html>
